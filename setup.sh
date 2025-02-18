@@ -71,7 +71,7 @@ gem install lolcat
 apt install wondershaper -y
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/NevermoreSSH/aiov2/main/"
+    REPO="https://raw.githubusercontent.com/Ntungwa/aiov2/main/"
 
 ####
 start=$(date +%s)
@@ -433,10 +433,6 @@ chmod +x /etc/rc.local
 # enable rc local
 systemctl enable rc-local
 systemctl start rc-local.service
-
-# disable ipv6
-echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
-sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 #update
 # set time GMT +8
